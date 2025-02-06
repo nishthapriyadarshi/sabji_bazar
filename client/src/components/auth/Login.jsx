@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useNavigate,Link } from 'react-router-dom';
+import LoginLogo from '../../assets/login_Sabji.svg';
 
 import 'tailwindcss/tailwind.css';
 
@@ -41,8 +42,7 @@ const LoginForm = () => {
     <div className="min-h-screen flex items-center justify-center">
       <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col md:flex-row w-3/4">
         <div className="md:w-1/2">
-          <img src="https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?q=80&w=1956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Background" 
-          className="h-full w-full object-cover"
+          <img src={LoginLogo}className="h-full w-full object-cover"
           />
         </div>
         <div className="md:w-1/2 flex justify-center items-center p-4">

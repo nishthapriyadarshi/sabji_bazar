@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
+import SignupLogo from "../../assets/signup_Sabji.svg"
 import 'tailwindcss/tailwind.css';
 
 const Signup = () => {
@@ -36,8 +37,7 @@ const Signup = () => {
       <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col md:flex-row w-3/4">
         <div className="md:w-1/2">
           {/* Add your image URL here */}
-          <img src="https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?q=80&w=1956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Background" 
-          className="h-full w-full object-cover"/>
+          <img src={SignupLogo}className="h-full w-full object-cover"/>
         </div>
         <div className="md:w-1/2 flex justify-center items-center p-4">
           <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-sm">
